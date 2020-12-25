@@ -31,7 +31,7 @@ const cardList = [
 // 各スートごとに2からAまで作成する
 const deckBase =
   suitList
-    .map((suit) => cardList.map((card) => ({ suit, ...card })))
+    .map((suit) => cardList.map((card) => ({ suit, ...card })))//「map」は配列データに使うメソッドであり、各要素1つずつに対して「コールバック関数」を実行し、その結果を新しい配列として返すことが出来るようになっています。
     .flat()　//多階層の配列を一階層にするメソッド。
     .map(Object.freeze);//オブジェクトを凍結する。他のコードがプロパティを削除したり変更したりすることができなくなる。
 

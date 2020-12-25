@@ -47,7 +47,10 @@ for (let i = 0; i < cardList.length; i++) {
 console.log(deckBase3);
 
 const deckBase2 =
-    suitList.map(function (suit) { cardList.map(function (card) { suit, card }) })
+    suitList.map(function (suit) { return suit }).cardList.map(function (card) { return card });
+
+
+
 
 console.log(deckBase2);
 
